@@ -12,7 +12,7 @@ const rightBtn = document.querySelector(".btn-right");
 function showSlide(index) {
   // Hide all slides
   slides.forEach(slide => {
-    // slide.style.display = "none";
+    slide.style.display = "none";
   });
 
   // Show the one at the current index
