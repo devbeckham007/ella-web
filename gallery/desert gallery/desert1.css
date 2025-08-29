@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.parent{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    background-color: rgb(241, 241, 241);
+    /* position: sticky;
+    top: 0%; */
+}
+/* General Styles */
+.wed-gal {
+    /* background-color: aqua; */
+    width: 100%;
+    height:auto;
+    padding: 1px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.sub-wed li img {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.sub-wed li {
+    list-style: none;
+    width: 80%;
+    max-width: 100%;
+    height: 60%;
+    /* background-color: rgb(160, 160, 160); */
+    animation: fade 0.5s both linear;
+}
+@keyframes fade {
+    from{
+        opacity: 0.4;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.sub-wed {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* background-color: brown; */
+    /* padding: 20px; */
+    box-sizing: border-box;
+    height: 30%;
+}
+
+/* .button {
+    margin-left: 550px;
+} */
+.button {
+    position: absolute;
+    top: 50%;
+    width: 74%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    /* transform: translateY(5%); */
+    z-index: 1;
+}
+
+.prev, .next {
+    display: inline-block;
+    background-color: rgb(104, 102, 102);
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .wed-gal{
+        overflow: hidden;
+    }
+    .sub-wed {
+        margin: 0%;
+    }
+    .sub-wed li{
+        /* background-color: brown; */
+        margin-right: 10%;
+        width: 400px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .sub-wed li img{
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .button{
+        width: 320px;
+        /* background-color: aqua; */
+
+    }
+    .prev,.next {
+        width: 30px;
+        height: 30px;
+        /* background-color: bisque; */
+    }
+    /* .prev {
+        margin-left: 200px;
+    } */
+
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .wed-gal{
+        margin-right: 20px;
+        width: 1000px;
+    }
+    .sub-wed {
+        margin: 0%;
+    }
+    .sub-wed li{
+        width: 1000px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .sub-wed li img{
+        width: 1000px;
+        height: 1000px;
+        object-fit: cover;
+    }
+    .button{
+        width: 900px;
+        /* background-color: aqua; */
+
+    }
+    .prev,.next {
+        width: 100px;
+        height: 100px;
+        /* background-color: bisque; */
+    }
+}
+
