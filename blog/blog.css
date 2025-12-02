@@ -101,7 +101,432 @@
 }
 .sub-gallery li img{
     width: 300px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px black;
     min-width: 200px;
     height: 250px;
     
+}
+footer{
+    /* background-color: blue; */
+}
+.head-footer1{
+    /* background-color: brown; */
+}
+.head-footer1 h1 {
+        color: rgb(194, 126, 1);
+        text-align: center;
+        font-size: 3.5rem;
+        font-style: oblique;
+        font-family: Arial, Helvetica, sans-serif;
+}
+.head-footer1 p{
+    color: rgb(97, 93, 93);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.api-link{
+     color: rgb(36, 35, 35);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif;
+}
+.api-link a{
+    text-decoration: none;
+    color: rgb(210, 152, 45);
+}
+.api-link a:hover{
+    color: rgb(141, 93, 3);
+}
+.head-footer2{
+    /* background-color: blue; */
+}
+.search-con{
+    /* background-color: brown; */
+   /* display: flex; */
+    height: fit-content;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+#search-input{
+    width: 500px;
+     height: 30px;
+    font-size: 1rem;
+    /* border: 1px solid black; */
+    outline: none;
+    padding: 5px;
+   background-color: white; 
+   border-radius: 5px;
+   margin-right: 10px;
+   outline: none;
+}
+input[type="text"]:focus{
+    padding: 6px;
+    border-color: gray;
+}
+input[type="text"]:hover{
+    padding: 7px;
+}
+#search-btn{
+    background-color: rgb(141, 92, 1);
+    color: white;
+    font-size: 1rem;
+    width: 60px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#search-btn:hover{
+    background-color:  rgb(158, 104, 5);
+    padding: 6px;
+}
+#result-heading{
+     color: rgb(97, 93, 93);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    
+}
+#error-container{
+    background-color: rgb(223, 145, 0);
+    border: 1px solid rgb(32, 28, 26);
+    color: black;
+    padding: 1rem;
+    border-radius: 3px;
+    text-align: center;
+    width: 900px;
+    margin: 0% auto;
+    margin-bottom: 1.5rem;
+}
+.hidden{
+    display: none;
+}
+.cake-container{
+    display: grid;
+    /* background-color: blueviolet; */
+    /* width: 500px; */
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 1.5rem;
+}
+.cake{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    /* width: 200px; */
+    box-shadow: 2px 3px 8px black;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition:0.5s ease;
+}
+.cake:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 3px 5px black;
+}
+.cake img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.cake-info{
+    padding: 1rem;
+} 
+.cake-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+.cake-category {
+  display: inline-block;
+  background-color: rgb(255, 133, 89);
+  color: black  ;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.cakes-details {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow:2px 3px 5px black;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+#back-btn {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  color: orangered;
+  border: 1px solid orangered;
+  padding: 2px;
+  width: 150px;
+  border-radius: 6px;
+}
+#back-btn:hover{
+    background-color: rgb(243, 109, 60);
+    color: white;
+}
+.cake-details-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cake-details-img {
+  width: 30%;
+  /* max-width: 400px; */
+  border-radius: 5px;
+  margin-left: 440px;
+  margin-bottom: 1.5rem;
+}
+.cake-details-title {
+  font-size: 1.8rem;
+  color: orangered;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.cake-details-category {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.cake-details-category span {
+  background-color: rgb(247, 108, 58);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+.cake-details-instructions {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.cake-details-instructions h3 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+   color: rgb(194, 126, 1);
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: oblique;
+        font-family: Arial, Helvetica, sans-serif;
+  
+}
+.ingredients-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 8px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.ingredients-list li {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  background-color: white;
+  border-radius:4px;
+  font-size: 0.9rem;
+}
+
+.ingredients-list li i {
+  color: blue;
+  margin-right: 8px;
+}
+.youtube-link {
+  display: inline-block;
+  background-color: #ff0000;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.youtube-link i {
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    .sec-sec{
+    height: 600px;
+}
+.sub-gallery{
+    /* background-color: aquamarine; */
+      width: 340px;
+      height: fit-content;
+      margin: 0 auto;
+
+}
+.main-gallery{
+    /* background-color: blue; */
+    width: fit-content;
+}
+.sub-gallery li{
+    /* background-color: brown; */
+    width: 300px;
+    height: fit-content;
+    /* margin: 30px 10px; */
+}
+.sub-gallery li img{
+    width: 290px;
+}
+.sub-gallery li p{
+    width: 290px;
+}
+#search-input{
+    width: 260px;
+    margin-left: 5px;
+}
+#result-heading{
+    margin-bottom: 60px;
+}
+.cake-details-img {
+    margin-left: 20px;
+    width: 300px;
+}
+.youtube-link {
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+   .sec-sec{
+    height: 600px;
+}
+.sub-gallery{
+    /* background-color: aquamarine; */
+      width: 340px;
+      height: fit-content;
+      margin: 0 auto;
+
+}
+.main-gallery{
+    /* background-color: blue; */
+    width: fit-content;
+}
+.sub-gallery li{
+    /* background-color: brown; */
+    width: 400px;
+    height: fit-content;
+    /* margin: 30px 10px; */
+}
+.sub-gallery li a{
+    /* background-color: blue; */
+    /* margin-left: 10px; */
+
+}
+.sub-gallery li img{
+    width: 350px;
+}
+.sub-gallery li p{
+    width: 350px;
+}
+#search-input{
+    width: 300px;
+    margin-left: 5px;
+}
+#result-heading{
+    margin-bottom: 60px;
+}
+.cake-details-img {
+    margin-left: 60px;
+    width: 300px;
+}
+.youtube-link {
+    margin-bottom: 50px;
+    margin-left: 140px;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+.sub-gallery{
+    /* background-color: aquamarine; */
+      width: 750px;
+      height: fit-content;
+      margin: 0 auto;
+
+}
+.main-gallery{
+    /* background-color: blue; */
+    width: fit-content;
+}
+.sub-gallery li{
+    /* background-color: brown; */
+    width: 500px;
+    height: fit-content;
+    margin-right: 280px;
+    /* margin: 30px 10px; */
+}
+.sub-gallery li a{
+    /* background-color: blue; */
+    /* margin-left: 10px; */
+
+}
+.sub-gallery li img{
+    width: 700px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 8px black;
+    height: 300px;
+    object-fit: fill;
+}
+.sub-gallery li p{
+    width: 700px;
+}
+#search-input{
+    width: 500px;
+}
+#result-heading{
+    margin-bottom: 60px;
+}
+.cake-details-img {
+    margin-left: 150px;
+    width: 450px;
+}
+.youtube-link {
+    margin-bottom: 50px;
+    margin-left: 280px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.cake-details-instructions h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.cake-details-instructions p{
+    font-size: 1.3rem;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.cake-details-ingredients h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 600;
+
+}
+.ingredients-list{
+   font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.cake-h2{
+       text-align: center;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 800;
+
+}
+.cake-details-category{
+    font-size: 3rem;
+}
 }

@@ -81,10 +81,11 @@
     font-weight: 300;
     font-style: oblique;
     text-align: center; 
+    margin-right: 20px;
 }
 .cake1-1{
     list-style: none;
-    background-color: brown;
+    /* background-color: brown; */
     width: 200px;
     height: 200px;
     border-radius: 100px;
@@ -92,7 +93,7 @@
 }
 .cake2-1{
     list-style: none;
-    background-color: green;
+    /* background-color: green; */
     width: 200px;
     height: 200px;
     border-radius: 100px;
@@ -194,4 +195,49 @@
 }
 .first-footer button a:hover{
     color: grey;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .first-section{
+         /* background-color: aquamarine; */
+         margin-top: 10px;
+         width: fit-content;
+    }
+    .classic{
+        /* background-color: blueviolet; */
+         margin: 0;
+
+    }
+    .premium{
+        /* background-color: brown; */
+         margin: 0;
+         /* width: 100px; */
+    }
+    .first-section{
+    /* background-color: blue; */
+    display: flex;
+    justify-content:left;
+    align-items:start;
+}
+    .cake1-1{
+         width: 150px;
+         height: 100px;
+         margin-bottom: 45px;
+    }
+    .cake1-1 img{
+        width: 150px;
+        height: 150px;
+    }
+    .cake2-1 img{
+        width: 150px;
+        height: 150px;
+    }
+    .cake2-1{
+         width: 150px;
+         height: 100px;
+         margin-bottom: 45px;
+    }
+    .first-footer{
+        margin: 0% auto;
+        height: fit-content;
+    }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/bootstrap.main.css">
 </head>
 <body>
@@ -69,7 +70,35 @@
                         </ul>
                     </div>
                   </section>
+                  <footer>
+                    <div class="head-footer1">
+                        <h1><i class="fa-solid fa-cake-candles"></i> Cake Recipe Finder</h1>
+                        <p>Find delicious cake recipes from the world</p>
+                    </div>
+                    <p class="api-link">
+                      Data provided by
+                      <a href="http://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata">ThemealDB</a>
+                    </p>
+                    <div class="head-footer2">
+                      <div class="search-con" id="search-con">
+                          <input type="text" id="search-input" placeholder="Search for cakes or keywords">
+                          <button id="search-btn">search</button>
+                      </div>
+                        <div  class="hidden" id="error-container">
+                          <p>No meals found. Try another search term!</p>
+                        </div>
+                      <div id="result-heading"> </div>
+                    </div>
+                    <div class="content-footer">
+                      <div class="cake-container" id="cakes"></div>
+                        <div id="cakes-details" class="hidden">
+                            <button id="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to recipe</button>
+                            <div class="cakes-details-content"></div>
+                        </div>
+                      </div>
+                  </footer>
     </div>
     <script src="../js/bootstrap.js"></script>
+    <script src="./blog.js"></script>
 </body>
 </html>
