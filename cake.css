@@ -585,10 +585,11 @@
     }
     .main-section{
         background-color: chocolate;
+        width: fit-content;
     }
      .main-ul{
         background-color: brown;
-        width: 412px;
+        width: 392px;
      }
      .main-ul li {
         background-color: blueviolet;
