@@ -583,23 +583,26 @@
     #parent-div{
         background-color: white;
     }
+    .first-section{
+        margin-bottom: 150px;
+    }
     .main-section{
-        background-color: chocolate;
-        width: 360px;
+        /* background-color: chocolate; */
+        width: 355px;
     }
      .main-ul{
-        background-color: brown;
+        /* background-color: brown; */
         width: 350px;
      }
      .main-ul li {
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
         margin-right: 33px;
         width: 300px;
      }
     .main-ul li img{
         /* margin-right: 10px; */
-        background-color: aqua;
-        width: 250px;
+        /* background-color: aqua; */
+        width: 300px;
     }
     .cake-slide{
         margin: 10px;
@@ -608,11 +611,11 @@
     .fav-cake li img{
         width: 200px;
         height: 200px;
-        background-color: blue;
+        /* background-color: blue; */
         object-fit: cover;
     }
     .cake-slide{
-        background-color: coral;
+        /* background-color: coral; */
         width: 300px;
         height: 200px;
     }
@@ -640,10 +643,10 @@
         margin-top: 20px;
     }
     .cake-foot{
-        background-color: brown;
+        /* background-color: brown; */
         width: 100px;
         height: 100px;
-          margin: 18px;
+          margin-right: 50px;
     }
      .cake-foot:nth-of-type(2),
      .cake-foot:nth-of-type(4){
