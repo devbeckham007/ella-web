@@ -328,12 +328,12 @@ position: relative;
 @media screen and (min-width: 320px) and (max-width: 480px) {
    .main-section{
     width: auto;
-    background-color: aqua;
+    /* background-color: aqua; */
    } 
    .first-section{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 350px;
-    height: 400px;
+    height: 440px;
     margin: 0 auto;
    }
    .slide-show img{
@@ -347,7 +347,7 @@ position: relative;
     /* margin-left: 10px; */
 }
 .third-sec{
-width: 308px; 
+width: 390px; 
 min-width: 300px;
 /* height: 1700px; */
 background-color: rgb(247, 188, 141); 
@@ -361,7 +361,7 @@ box-sizing: border-box;
 position: relative;
 }
 .slide-container img{
-    width: 200px;
+    width: 250px;
     height: 250px;
     /* margin-left: 70px; */
     object-fit: cover;
@@ -369,7 +369,7 @@ position: relative;
      /* Hide all images initially */
 }
 .slide-container{
-    width: 200px;
+    width: 250px;
     height: fit-content;
     background-color: #ffffff;
     display: flex; 
