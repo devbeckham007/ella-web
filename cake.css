@@ -589,11 +589,12 @@
     }
      .main-ul{
         background-color: brown;
-        width: 392px;
+        width: 200px;
      }
      .main-ul li {
         background-color: blueviolet;
         margin-right: 33px;
+        width: 200px;
      }
     .main-ul li img{
         /* margin-right: 10px; */
@@ -611,6 +612,7 @@
         object-fit: cover;
     }
     .cake-slide{
+        background-color: coral;
         width: 300px;
         height: 200px;
     }
