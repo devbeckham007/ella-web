@@ -585,7 +585,7 @@
     }
     .main-section{
         background-color: chocolate;
-        width: fit-content;
+        width: 200px;
     }
      .main-ul{
         background-color: brown;
