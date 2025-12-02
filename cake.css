@@ -585,21 +585,21 @@
     }
     .main-section{
         background-color: chocolate;
-        width: 200px;
+        width: 360px;
     }
      .main-ul{
         background-color: brown;
-        width: 200px;
+        width: 350px;
      }
      .main-ul li {
         background-color: blueviolet;
         margin-right: 33px;
-        width: 200px;
+        width: 300px;
      }
     .main-ul li img{
         /* margin-right: 10px; */
         background-color: aqua;
-        width: 350px;
+        width: 250px;
     }
     .cake-slide{
         margin: 10px;
@@ -615,6 +615,10 @@
         background-color: coral;
         width: 300px;
         height: 200px;
+    }
+    .gallery button{
+        /* background-color: aquamarine; */
+        margin-left: 20%;
     }
     .fav-cake{
         width: 900px;
