@@ -347,7 +347,7 @@ position: relative;
     /* margin-left: 10px; */
 }
 .third-sec{
-width: 390px; 
+width: 350px; 
 min-width: 300px;
 /* height: 1700px; */
 background-color: rgb(247, 188, 141); 
@@ -361,7 +361,7 @@ box-sizing: border-box;
 position: relative;
 }
 .slide-container img{
-    width: 250px;
+    width: 300px;
     height: 250px;
     /* margin-left: 70px; */
     object-fit: cover;
@@ -369,7 +369,7 @@ position: relative;
      /* Hide all images initially */
 }
 .slide-container{
-    width: 250px;
+    width: 300px;
     height: fit-content;
     background-color: #ffffff;
     display: flex; 
